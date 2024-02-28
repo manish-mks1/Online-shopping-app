@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart_fragment"
+    android:background="@color/lightWhite">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/cartEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text=""
+        android:layout_gravity="center"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/cartListView"
+        android:divider="@color/white"
+        android:dividerHeight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_above="@id/orderBtn">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Total Price:"/>
+
+        <TextView
+            android:id="@+id/totalPriceShow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="start"
+            android:textColor="@color/darkgreen"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="2100"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="start"
+            android:textColor="@color/darkgreen"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text=" Rs."/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Place order" />
+</RelativeLayout>
+
+
+</FrameLayout>

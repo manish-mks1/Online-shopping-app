@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_fragment"
+    android:background="@drawable/profile_background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iconuser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_shape_layout"
+                android:layout_margin="10dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/nameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/emailuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:id="@+id/backToHomeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/round_rectangle_blue"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_solid_white">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/back_arrow"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back to Home"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:text="Account Info"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ListView
+                    android:id="@+id/profileListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
